@@ -12,7 +12,4 @@ RUN curl -fsSL \
       -o /usr/local/bin/argocd \
     && chmod +x /usr/local/bin/argocd
 
-RUN argocd version --client \
- && bao version
- 
 ENTRYPOINT ["/bin/sh"]
