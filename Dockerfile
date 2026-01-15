@@ -4,8 +4,7 @@ ENV ARGOCD_VERSION=2.13.4
 
 RUN apk add --no-cache \
     curl \
-    ca-certificates \
-    unzip
+    ca-certificates
 
 RUN curl -fsSL \
       https://github.com/argoproj/argo-cd/releases/download/v${ARGOCD_VERSION}/argocd-linux-amd64 \
